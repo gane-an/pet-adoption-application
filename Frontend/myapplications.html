@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Applications</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <style>
+      .PENDING {
+        color: orange !important;
+        font-weight: bold;
+      }
+
+      .APPROVED {
+        color: green !important;
+        font-weight: bold;
+      }
+
+      .REJECTED {
+        color: red !important;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">🐾 Pet Portal</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="mypets.html">My Pets</a></li>
+          <li><a href="myapplications.html">My Applications</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <div id="navbar"></div> -->
+
+    <div id="react-root">
+      <!-- React will render ApplicationCard components here -->
+      <div class="loading">Loading...</div>
+    </div>
+
+    <!-- React will mount here -->
+
+    <script src="js/navbar.js"></script>
+    <script src="react-applications/dist/main.js"></script>
+  </body>
+</html>

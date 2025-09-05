@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pets</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">🐾 Pet Portal</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mypets.html" class="active">My Pets</a></li>
+          <li><a href="myapplications.html">My Applications</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h1>Manage My Pets</h1>
+
+      <!-- Add Pet Form -->
+      <form id="pet-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="type" placeholder="Type" required />
+        <input type="text" id="breed" placeholder="Breed" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="text" id="city" placeholder="City" required />
+        <input type="text" id="owner" placeholder="Owner" required />
+        <button type="submit" class="btn">Add Pet</button>
+      </form>
+
+      <!-- My Pet List -->
+      <div id="my-pet-list" class="pet-list"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Pet Adoption Portal</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/myPets.js"></script>
+  </body>
+</html>

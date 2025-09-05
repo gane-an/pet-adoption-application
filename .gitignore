@@ -31,5 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
-fe-1.docx
-fe-2.docx
+
+node_modules/

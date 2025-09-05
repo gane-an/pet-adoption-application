@@ -3,40 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet Adoption Portal - Gallery</title>
+    <title>Pet Details</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/navbar.css" />
   </head>
   <body>
+    <!-- Header / Navbar -->
     <header>
       <nav class="navbar">
         <a href="index.html" class="logo">🐾 Pet Portal</a>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="mypets.html">My Pets</a></li>
           <li><a href="myapplications.html">My Applications</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-      <section class="hero">
-        <h1>Find Your Perfect Pet 🐶🐱</h1>
-        <p>Explore pets available for adoption in your city.</p>
-      </section>
+      <!-- Pet Details -->
+      <div id="pet-detail" class="pet-card one-pet"></div>
 
-      <section id="pet-list" class="pet-list"></section>
+      <!-- Apply Form -->
+      <form id="apply-form" class="one-pet">
+        <div class="cen">
+          <h3>Apply for Adoption</h3>
+          <input type="text" id="applicant" placeholder="Your name" required />
+          <button type="submit" class="btn">Apply</button>
+        </div>
+      </form>
     </main>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2025 Pet Adoption Portal</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/api.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/pets.js"></script>
+    <script src="js/petDetail.js"></script>
   </body>
 </html>

@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.stream.Collectors;
+
 import java.util.List;
 
 @Service
@@ -16,9 +18,17 @@ public class ApplicationService {
     private final ApplicationRepository appRepo;
     private final PetRepository petRepo;
 
+    // public List<Application> list() {
+    //     return appRepo.findAll();
+        
+    // }
     public List<Application> list() {
-        return appRepo.findAll();
+    return appRepo.findAll()
+                  .stream()
+                  .filter(a -> a.getPet() != null)
+                  .collect(Collectors.toList());
     }
+
 
     @Transactional
     public Application apply(Application application) {
