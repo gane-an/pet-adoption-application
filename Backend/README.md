@@ -187,14 +187,14 @@ It manages **pets** (listed by owners) and **applications** (submitted by applic
 Here are some screenshots of the portal:
 
 <p align="center" style="display:flex;gap:10px">
-  <img src="../Screenshots/show-pets.png" width="44%" />
-  <img src="../Screenshots/insert-pet.png" width="44%" />
+  <img src="./Screenshots/show-pets.png" width="44%" />
+  <img src="./Screenshots/insert-pet.png" width="44%" />
 </p>
 <p align="center" style="display:flex;gap:10px">
-  <img src="../Screenshots/get-pet-by-id.png" width="44%" />
-  <img src="../Screenshots/delete-pet.png" width="44%" />
+  <img src="./Screenshots/get-pet-by-id.png" width="44%" />
+  <img src="./Screenshots/delete-pet.png" width="44%" />
 </p>
 <p align="center" style="display:flex;gap:10px">
-  <img src="../Screenshots/pet-database-status.png" width="44%" />
-  <img src="../Screenshots/application-db-status.png" width="44%" />
+  <img src="./Screenshots/pet-database-status.png" width="44%" />
+  <img src="./Screenshots/application-db-status.png" width="44%" />
 </p>
