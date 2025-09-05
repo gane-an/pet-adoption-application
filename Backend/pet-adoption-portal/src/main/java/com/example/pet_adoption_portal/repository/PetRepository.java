@@ -1,6 +1,6 @@
 package com.example.pet_adoption_portal.repository;
 
-import com.example.petadoption.entity.Pet;
+import com.example.pet_adoption_portal.entity.Pet;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
